@@ -34,6 +34,7 @@ Ahora debemos ejecutar el comando siguiente y obtendremos lo de la imagen
 <img src="img/musica.png">
 </p>   
 Agregar el módulo music al archivo **TuMusica/setting.py** (dentro de installed apps)  
+
 ```python
 INSTALLED_APPS = [
     'django.contrib.admin',
