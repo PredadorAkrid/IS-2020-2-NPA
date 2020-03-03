@@ -82,4 +82,11 @@ def index(request):
     elif request.method == 'POST':
         return HttpResponseForbidden()
 ```  
-De ésta forma ya solo nos faltaría definir nuestro html para la primera vista.  
+De ésta forma ya solo nos faltaría definir nuestro html para la primera vista, pero si intentamos correr el proyecto pasaría lo siguiente:
+
+
+<p align="center"> 
+<img src="img/error.png">
+</p>
+
+
