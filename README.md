@@ -33,3 +33,15 @@ Ahora debemos ejecutar el comando siguiente y obtendremos lo de la imagen
 <p align="center"> 
 <img src="img/musica.png">
 </p>   
+Agregar el módulo music al archivo **TuMusica/setting.py** (dentro de installed apps)  
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'music',
+]
+```
