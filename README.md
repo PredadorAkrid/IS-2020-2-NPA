@@ -149,3 +149,21 @@ def songs(request):
         print("entra a index post")
         return HttpResponseForbidden()
 ```
+
+Agregamos a templates el top_songs.html  
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canciones populares</title>
+</head>
+<body>
+	<h1>Estas son las canciones del momento</h1>
+</body>
+</html>
+```  
+Volvemos a correr el servidor obtentiendo:   
+<p align="center"> 
+<img src="img/fin.png">
+</p> 
