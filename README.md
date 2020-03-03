@@ -108,7 +108,15 @@ De ésta forma ya solo nos faltaría definir nuestro html para la primera vista,
 <img src="img/error.png">
 </p>  
 
-Creamos el template index.html de momento dentro de la misma carpeta de **music**  
+Creamos el template index.html en una carpeta llamada templates, nuestro proyecto se vería de la siguiente forma:
+
+```
+─── TuMusica/  
+	└── manage.py   
+	└── TuMusica/
+	└── templates/
+``` 
+
 
 ```html
 <!DOCTYPE html>
