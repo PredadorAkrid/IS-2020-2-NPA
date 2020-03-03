@@ -33,6 +33,7 @@ Ahora debemos ejecutar el comando siguiente y obtendremos lo de la imagen
 <p align="center"> 
 <img src="img/musica.png">
 </p>   
+
 Agregar el módulo music al archivo **TuMusica/setting.py** (dentro de installed apps)  
 
 ```python
@@ -62,6 +63,7 @@ TEMPLATES = [
     },
 ]
 ```
+
 Ahora nuestro archivo **TuMusica/urls.py**  deberá quedar de la siguiente forma  
 
 ```python
