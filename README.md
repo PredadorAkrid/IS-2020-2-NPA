@@ -46,3 +46,15 @@ INSTALLED_APPS = [
     'music',
 ]
 ```
+Ahora nuestro archivo **TuMusica/urls.py**  deberá quedar de la siguiente forma  
+
+```python
+#
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('music.urls') ),
+]
+```
