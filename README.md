@@ -27,4 +27,9 @@ Tendremos la siguiente estructura:
 ─── TuMusica/  
 	└── manage.py   
 	└── TuMusica/  
-```  
+``` 
+Ahora debemos ejecutar el comando siguiente y obtendremos lo de la imagen  
+
+<p align="center"> 
+<img src="img/musica.png">
+</p>   
