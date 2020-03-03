@@ -121,5 +121,9 @@ Creamos el template index.html de momento dentro de la misma carpeta de **music*
 </body>
 </html>
 ```    
+Si vamos a http://127.0.0.1:8000/ obtendremos lo siguiente: 
 
+<p align="center"> 
+<img src="img/index.png">
+</p>  
 
