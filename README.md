@@ -115,6 +115,8 @@ Creamos el template index.html en una carpeta llamada templates, nuestro proyect
 	└── manage.py   
 	└── TuMusica/
 	└── templates/
+	└── music/
+	
 ``` 
 
 
