@@ -92,5 +92,18 @@ De ésta forma ya solo nos faltaría definir nuestro html para la primera vista,
 <img src="img/error.png">
 </p>  
 
+Creamos el template index.html de momento dentro de la misma carpeta de **music**  
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+	Bienvenido usuari@
+</body>
+</html>
+```    
 
 
