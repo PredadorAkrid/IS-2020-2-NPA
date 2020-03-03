@@ -135,7 +135,17 @@ from django.conf.urls import url,include
 from music.views import *
 urlpatterns = [
     path('',index),
-    path('^/top_songs$', songs),
+    path('top_songs', songs),
 ]
 ```    
+
 Y posteriormente al archivo **music/views.py**
+
+```python
+def songs(request):
+    if request.method == 'GET':
+       	return render(request,'top_songs.html')
+    elif request.method == 'POST':
+        print("entra a index post")
+        return HttpResponseForbidden()
+```
