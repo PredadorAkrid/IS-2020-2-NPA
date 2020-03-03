@@ -84,9 +84,13 @@ def index(request):
 ```  
 De ésta forma ya solo nos faltaría definir nuestro html para la primera vista, pero si intentamos correr el proyecto pasaría lo siguiente:
 
+<p align="center"> 
+<img src="img/start.png">
+</p>  
 
 <p align="center"> 
 <img src="img/error.png">
-</p>
+</p>  
+
 
 
