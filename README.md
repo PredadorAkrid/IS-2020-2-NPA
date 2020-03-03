@@ -163,7 +163,7 @@ Agregamos a templates el top_songs.html
 </body>
 </html>
 ```  
-Volvemos a correr el servidor obtentiendo:   
+Volvemos a correr el servidor obteniendo:   
 <p align="center"> 
 <img src="img/fin.png">
 </p> 
