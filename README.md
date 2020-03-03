@@ -2,6 +2,9 @@
 
 Autor **Navarrete Puebla Alexis**
 
+Link de carpeta con entorno:
+https://drive.google.com/file/d/1FG96qwmIis7SupY0Qyhm1lt6tJJDdjk3/view?usp=sharing
+
 Repositorio para laboratorio de la materia Ingeniería de Software semestre 2020-2
 Práctica 03
 
