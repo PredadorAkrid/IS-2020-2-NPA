@@ -58,3 +58,28 @@ urlpatterns = [
     path('', include('music.urls') ),
 ]
 ```
+
+Ahora debemos ir la carpeta music y crear un archivo **urls.py** aquí definiremos las rutas del módulo  por lo que tendríamos el siguiente código:  
+
+```python
+from django.urls import path
+from django.conf.urls import url,include
+from music.views import *
+urlpatterns = [
+    path('',index),
+]
+```  
+Posteriormente debemos definir la ruta en views.py así que abrimos el archivo **music/views.py**  
+
+```python
+from django.shortcuts import render
+
+# Create your views here.
+
+def index(request):
+    if request.method == 'GET':
+        return render(request,'index.html')
+    elif request.method == 'POST':
+        return HttpResponseForbidden()
+```  
+De ésta forma ya solo nos faltaría definir nuestro html para la primera vista.  
