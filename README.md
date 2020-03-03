@@ -127,3 +127,15 @@ Si vamos a http://127.0.0.1:8000/ obtendremos lo siguiente:
 <img src="img/index.png">
 </p>  
 
+Ahora crearemos otra vista para renderizar el segundo template, nos regresamos al archivo **music/urls.py**  
+
+```python
+from django.urls import path
+from django.conf.urls import url,include
+from music.views import *
+urlpatterns = [
+    path('',index),
+    path('^/top_songs$', songs),
+]
+```    
+Y posteriormente al archivo **music/views.py**
