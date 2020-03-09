@@ -1,0 +1,15 @@
+.container{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20vh;
+	height: auto;
+	margin-left: 20vh;
+}
+.title{
+	justify-content: center;
+}
+.bienvenida{
+	vertical-align: center;
+}
+.main-image{
+}

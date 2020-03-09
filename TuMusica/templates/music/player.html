@@ -1,0 +1,40 @@
+<!-- Player -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'music/css/base.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'music/css/player.css'%}">
+<script type="text/javascript" src="{% static 'music/js/menu.js'%}"></script>
+
+<div id='player-container'>
+	<div class="item1">
+		<img src="{% static 'music/img/song-icon.png'%}">
+	</div>
+	<div class="item2">
+		<div class="item2-Title">
+			Título: Example1
+		</div>
+		<div class="item2-Artist">
+			Artista: Example2
+		</div>
+		<div class="item2-Álbum">
+			Álbum: Example3
+		</div>
+	</div>
+	<!--
+	<div class="item3">		
+			<audio class="reproductor" preload="auto" controls>				
+			</audio>
+	</div>
+	-->
+	<audio class="reproductor" preload="auto" controls> </audio>
+	<div class="menu" onclick="myFunction(this)">
+  		<div class="bar1"></div>
+  		<div class="bar2"></div>
+  		<div class="bar3"></div>
+	</div>
+	<div class="share" >
+  		<img class="share-img"src="{% static 'music/img/share.jpg'%}">
+  		<a href=""></a>
+	</div>
+	
+
+</div>

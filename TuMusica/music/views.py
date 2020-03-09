@@ -1,17 +1,20 @@
 from django.shortcuts import render
+from django.views import View
 
 # Create your views here.
+##Function based views
 
-def index(request):
-    if request.method == 'GET':
-        return render(request,'index.html')
-    elif request.method == 'POST':
-        print("entra a index post")
+
+
+##Class-based-views
+class Index(View):
+    def get(self, request):
+        return render(request, 'music/index.html')
+    def post(self, request):
         return HttpResponseForbidden()
-def songs(request):
-    if request.method == 'GET':
-       	return render(request,'top_songs.html')
-    elif request.method == 'POST':
-        print("entra a index post")
+class Songs(View):
+    def get(self, request):
+        return render(request,'music/top_songs.html')
+    def post(self, request):
         return HttpResponseForbidden()
 
