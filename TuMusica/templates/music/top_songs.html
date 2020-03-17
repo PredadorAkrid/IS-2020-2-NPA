@@ -1,38 +1,56 @@
+{% extends 'music/base.html' %}
 {% load static %}
 
-<!DOCTYPE html5>
-<html>
-<head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+    
+    	
+	    		{% block title %}
+				canciones más escuchadas 
+				{% endblock title %}
 
-    <title>{% block title %}{% endblock title %} | Canciones más escuchadas </title>
-    {% load static %}
-    {% block head %}
-    {% endblock head %}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    {% block css %}
-    {% endblock css %}
-</head>
-<body>
-	<h1>Estas son las canciones del momento</h1>
-	<ul>
-		<li>Item 1</li>	
-		<li>Item 2</li>	
-		<li>Item 3</li>	
-		<li>Item 4</li>
-		<li>Item 5</li>	
-		<li>Item 6</li>	
-		<li>Item 7</li>	
-		<li>Item 8</li>	
+		
 
+		{% block css %}
+    		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    	{% endblock css %}
 
-	</ul>
 	{% block body_content %}
-	{% include 'music/player.html' %}
+		<h1>Estas son las canciones populares:</h1>
+	    
+	    <ul>
+	        {% for song in songs  %}
+	        <li>{{song}}</li>
+	        {% endfor %}
+	    </ul>
 
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	{% endblock body_content %}
-	{% block js %}
-	{% endblock js %}
-</body>
-</html>

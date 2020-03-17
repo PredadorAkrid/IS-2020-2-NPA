@@ -1,7 +1,6 @@
 <!-- Player -->
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'music/css/base.css'%}">
-<link rel="stylesheet" type="text/css" href="{% static 'music/css/player.css'%}">
+
 <script type="text/javascript" src="{% static 'music/js/menu.js'%}"></script>
 
 <div id='player-container'>
@@ -10,7 +9,7 @@
 	</div>
 	<div class="item2">
 		<div class="item2-Title">
-			Título: Example1
+			Título: {{name}}
 		</div>
 		<div class="item2-Artist">
 			Artista: Example2
@@ -25,7 +24,9 @@
 			</audio>
 	</div>
 	-->
-	<audio class="reproductor" preload="auto" controls> </audio>
+	<audio class="reproductor" preload="auto" controls> 
+		<source src="{{to_play.song_file.url}}" type="audio/mpeg">
+	</audio>
 	<div class="menu" onclick="myFunction(this)">
   		<div class="bar1"></div>
   		<div class="bar2"></div>
@@ -35,6 +36,4 @@
   		<img class="share-img"src="{% static 'music/img/share.jpg'%}">
   		<a href=""></a>
 	</div>
-	
-
 </div>

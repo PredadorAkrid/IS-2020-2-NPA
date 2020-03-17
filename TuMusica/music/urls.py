@@ -9,5 +9,5 @@ urlpatterns = [
     #path('top_songs', songs),
    	##Ésto lo haríamos si usáramos clases como vistas
    	path('', views.Index.as_view(), name='Index'),
-   	path('top_songs', views.Songs.as_view(), name='Songs'),
+   	path('top_songs', views.TopSongs.as_view(), name='top-songs'),
 ]
