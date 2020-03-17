@@ -4,7 +4,7 @@ from django.views import View
 # Create your views here.
 ##Function based views
 
-from .models import Song
+from .models import *
 
 
 ##Class-based-views

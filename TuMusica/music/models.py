@@ -3,11 +3,20 @@ from django.db import models
 # Create your models here.
 """Music Models"""
 
+def image_directory_path(instance, filename):
+    """Get song directory path to save."""
+    return f"artists/images/{instance.id}_{instance.name}_{filename}"
+
+def song_directory_path(instance, filename):
+    """Get song directory path to save."""
+    return f"music/songs/{instance.id}_{instance.name}_{filename}"
 
 class Artist(models.Model):
     """Artist Model."""
     # campo nombre 
     name = models.CharField(max_length=200)
+    image = models.ImageField(upload_to=image_directory_path, height_field=None, width_field=None, max_length=100)
+
     # Representación en cadena de un objeto artista
     def __str__(self):
         """Get str representation."""
@@ -18,14 +27,11 @@ class Artist(models.Model):
         return self.__str__()
 
 
-def song_directory_path(instance, filename):
-    """Get song directory path to save."""
-    return f"music/songs/{instance.id}_{instance.name}_{filename}"
+
 
 
 class Song(models.Model):
     """Song Model."""
-
     name = models.CharField(max_length=200)
     song_file = models.FileField(null=True, upload_to=song_directory_path)
 

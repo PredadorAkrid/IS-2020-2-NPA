@@ -17,12 +17,12 @@
 	{% block body_content %}
 		<h1>Estas son las canciones populares:</h1>
 	    
-	    <ul>
+	    <ul class="ListTable">
 	        {% for song in songs  %}
-	        <li>{{song}}</li>
-	        {% endfor %}
+	        <li>{{song}} | <a href="../../../media/{{song.song_file}}">{{song.song_file}}</a>   </li>
+	        {% endfor %}	        
 	    </ul>
-
+	    
 	<br>
 	<br>
 	<br>
