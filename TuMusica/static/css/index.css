@@ -3,7 +3,6 @@
 	vertical-align: middle;
 	width: 20vh;
 	height: auto;
-	margin-left: 20vh;
 }
 .title{
 	justify-content: center;
@@ -12,4 +11,5 @@
 	vertical-align: center;
 }
 .main-image{
+	justify-content: center;
 }

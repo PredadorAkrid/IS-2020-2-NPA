@@ -8,17 +8,20 @@
     {% load static %}
 
     {% block head %}
-
-    {% endblock head %}
     <link rel="stylesheet" type="text/css" href="{% static 'music/css/base.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'music/css/player.css' %}">
+    {% endblock head %}
+    
     {% block css %}
         
     {% endblock css %}
 </head>
 <body>
 {% block body_content %}
+
 {% endblock body_content %}
+
+<br>
 
 {% include 'music/player.html' %}
 

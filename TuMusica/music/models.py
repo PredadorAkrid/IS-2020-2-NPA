@@ -5,23 +5,26 @@ from django.db import models
 
 def image_directory_path(instance, filename):
     """Get song directory path to save."""
-    return f"artists/images/{instance.id}_{instance.name}_{filename}"
+    print(instance)
+    return f"artists/images/{instance.id_artist}_{instance.name}_{filename}"
 
 def song_directory_path(instance, filename):
     """Get song directory path to save."""
-    return f"music/songs/{instance.id}_{instance.name}_{filename}"
+    print(instance)
+    return f"music/songs/{instance.id_song}_{instance.name}_{filename}"
 
 class Artist(models.Model):
     """Artist Model."""
-    # campo nombre 
+    # campo nombre
+    id_artist = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=200)
     image = models.ImageField(upload_to=image_directory_path, height_field=None, width_field=None, max_length=100)
 
     # Representación en cadena de un objeto artista
     def __str__(self):
         """Get str representation."""
-        return self.name
-     
+        s = str(self.id_artist) + "" +  self.name
+        return s
     def __repr__(self):
         """Get str representation."""
         return self.__str__()
@@ -32,6 +35,7 @@ class Artist(models.Model):
 
 class Song(models.Model):
     """Song Model."""
+    id_song = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=200)
     song_file = models.FileField(null=True, upload_to=song_directory_path)
 

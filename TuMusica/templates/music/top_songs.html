@@ -1,56 +1,57 @@
 {% extends 'music/base.html' %}
 {% load static %}
 
+	    {% block title %}
+		canciones más escuchadas 
+		{% endblock title %}
 		
-    
-    	
-	    		{% block title %}
-				canciones más escuchadas 
-				{% endblock title %}
-
-		
-
-		{% block css %}
-    		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    	{% endblock css %}
-
-	{% block body_content %}
-		<h1>Estas son las canciones populares:</h1>
-	    
-	    <ul class="ListTable">
-	        {% for song in songs  %}
-	        <li>{{song}} | <a href="../../../media/{{song.song_file}}">{{song.song_file}}</a>   </li>
-	        {% endfor %}	        
-	    </ul>
-	    
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	{% endblock body_content %}
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		{% block body_content %}
+			<h1>Estas son las canciones populares:</h1>
+		    
+		    <ul class="ListTable">
+		        {% for song in songs  %}
+		        	<li>{{song}} | <a href="../../../media/{{song.song_file}}">{{song.song_file}}</a>   </li>	
+		        {% endfor %}	        
+		    </ul>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>	
+		{% endblock body_content %}

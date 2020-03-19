@@ -1,38 +1,77 @@
-<!-- Base -->
-{% load static %}
 {% extends 'music/base.html' %}
+
+{% load static %}
 
 
 	    	    
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	    
+	    	    <link rel="stylesheet" type="text/css" href="{% static 'music/css/index.css' %}">
+
 
 	    {% block css %}
-
 	    {% endblock css %}
-	    {% block title %}Inicio{% endblock title %}
-
+	    Inicio
+	    {% block title %}
+	    {% endblock title %}
+		
 		{% block body_content %}
-
-		<div class="container">
-			<div class="title">
-				<h1>Bienvenido usuario</h1>
+			<div class="container" align="center">
+				<div class="title">
+					<h1>Bienvenido usuario</h1>
+				</div>
+				<div class="bienvenida">
+					<p>
+						Aquí podrás encontrar el reproductor con las canciones  del momento.
+					</p>
+				</div>
+				<div class="main-image" >
+					<img  src="{% static 'img/icons/main-icon.png'%}">
+				</div>
+				<div class="top-songs">
+					<a href="top_songs">Ir a top songs</h1>
+				</div>			
 			</div>
-			<div class="bienvenida">
-				<p >
-					Aquí podrás el reproductor con las canciones top del momento.
-				</p>
-			</div>
-			<div class="main-image" >
-				<img  src="{% static 'img/icons/main-icon.png'%}">
-			</div>			
-		</div>
-
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+		{% endblock body_content %}
 
 		
-	{% block body_content %}
+	
 
