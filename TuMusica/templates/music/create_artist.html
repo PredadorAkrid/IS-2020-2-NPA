@@ -1,0 +1,45 @@
+{% extends 'music/base.html' %}
+
+{% block body_content %}
+<h1>Add an artist!</h1>
+<form action="./create-artist" method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+    {% for field in form %}
+    <div class="add_artist_input">
+        {{ field.label_tag }}
+        {{ field }}
+    	{{ field.errors }}
+        
+    </div>
+    {% endfor %}
+    <input value="Confirmar" type="submit">
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock body_content %}

@@ -17,11 +17,24 @@
     {% endblock css %}
 </head>
 <body>
-{% block body_content %}
+    <header>
+        <a href="{% url 'music:Index' %}">Index |</a>
+        {% if user.is_authenticated %}
+        <p>Welcome, {{ user.first_name }}.</p>
+        <a href="{% url 'users:logout' %}">Logout | </a>
+        <a href="{% url 'music:add_artist' %}">Agregar artista | </a>
+        {% else %}
+        <a href="{% url 'users:login' %}">Login | </a>  <a href="{% url 'users:sign_up'%}">Sign Up</a>
+        {% endif %}
 
-{% endblock body_content %}
-
+    </header>
+    {% block body_content %}
+    {% endblock body_content %}
 <br>
+<br>
+<br>
+<br>
+
 
 {% include 'music/player.html' %}
 

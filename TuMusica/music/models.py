@@ -18,7 +18,7 @@ class Artist(models.Model):
     # campo nombre
     id_artist = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=200)
-    image = models.ImageField(upload_to=image_directory_path, height_field=None, width_field=None, max_length=100)
+    image = models.ImageField(upload_to=image_directory_path)
 
     # Representación en cadena de un objeto artista
     def __str__(self):
