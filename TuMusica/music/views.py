@@ -48,4 +48,4 @@ class AddArtist(View):
             image=form.cleaned_data["image"],
             
         )
-        return HttpResponse("<h1>Artist Created!</h1>")
+        return render(request, 'music/index.html')
